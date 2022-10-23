@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Nyobak</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
     <div class="lamp1"></div>
@@ -29,20 +29,32 @@
    <div class="sign-box">
     <h1>Sign-up</h1>
     <form action="">
-        <label for="nick">Nickname</label>
-        <input type="text" placeholder="input username">
-        <label for="mail">Email</label>
-        <input type="email" placeholder="example@mail.id">
-        <label for="password">Password</label>
-        <input type="password" placeholder="***">
-        <label>Server</label>
-        <td class="server">
-            <select>
+        <div class="form-group">
+            <input type="text" placeholder="Nama Lengkap">
+            <label class="form-label">Full Name</label>
+        </div>
+        <div class="form-group">
+            <input type="number" placeholder="NIM">
+            <label class="form-label">Username</label>
+        </div>
+        <div class="form-group">
+            <input type="number" placeholder="Tanggal Lahir">
+            <label class="form-label">Umur</label>
+        </div>
+        <div class="form-group">
+            <input type="password" placeholder="Password">
+            <label class="form-label">Password</label>
+        </div>
+        
+        <div class="form-group">
+        <label class="label-server">Server</label>
+            <select aria-placeholder="Server">
+                <option value="" disabled selected hidden>Choose a Server</option>
                 <option value="">Asia</option>
                 <option value="">USA</option>
                 <option value="">Europe</option>
-            </select>
-        </td>
+            </select>    
+        </div>
         <div>
             <button class="register">Register now!</button>
         </div>
